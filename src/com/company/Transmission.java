@@ -2,6 +2,9 @@ package com.company;
 
 public class Transmission {
 
+       private String typeOfTransmission;
+    private String carDrive; // привод автомобиля: заднеприводный, переднеприводный или полноприводный.
+
     public String getTypeOfTransmission() {
         return typeOfTransmission;
     }
@@ -17,8 +20,4 @@ public class Transmission {
     public void setCarDrive(String carDrive) {
         this.carDrive = carDrive;
     }
-
-    private String typeOfTransmission;
-    private String carDrive; // привод автомобиля: заднеприводный, переднеприводный или полноприводный.
-
 }

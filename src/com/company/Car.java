@@ -15,6 +15,10 @@ package com.company;
 
 public class Car {
 
+    private int year;
+    private double price;
+    private String model;
+
     public String getModel() {
         return model;
     }
@@ -39,14 +43,9 @@ public class Car {
         this.price = price;
     }
 
-    private int year;
-    private double price;
-    private String model;
-
-    void makeCar(String name, int price){
+    void makeCar(String name, int price) {
         Car car = new Car();
 
 
     }
-
 }
