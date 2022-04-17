@@ -29,6 +29,4 @@ public class Engine {
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
-
-
 }
