@@ -2,13 +2,31 @@ package com.company;
 
 public class Wheel {
 
-    public int[] getWheel() {
-        return wheel;
+    private String name;
+    private int diameter;
+    private int width;
+
+    public String getName() {
+        return name;
     }
 
-    public void setWheel(int[] wheel) {
-        this.wheel = wheel;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    private int wheel[] = new int[4];
+    public int getDiameter() {
+        return diameter;
+    }
+
+    public void setDiameter(int diametr) {
+        this.diameter = diametr;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
 }

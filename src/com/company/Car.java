@@ -1,49 +1,46 @@
 package com.company;
 
-/**
- * Создать классы с геттерами и сеттерами
- * Собрать объект класса Автомобиль!
- * Для этого, нужно разработать класс Сar, с атрибутами.
- * ВАЖНО! Мы начинаем писать более взрослые классы, т о давайте добавим пару полей из других классов,
- * например Engine, Transmission, Wheel[] (масив колес).
- * Все эти классы тоже должны содержать сеттеры и геттеры)
- * Для всех атрибутов сгенерировать методы get/set:
- * Открыть меню (или нажать alt+ins)
- * <p>
- * Обратите внимание, если мы используем геттеры/сеттеры, то поля лучше помечать private.
- */
-
 public class Car {
 
-    private int year;
-    private double price;
     private String model;
+    private Engine engine;
+    private Transmission transmission;
+    private Wheel wheels[] = new Wheel[4];
 
-    public String getModel() {return model;}
+    public String getModel() {
+        return model;
+    }
 
     public void setModel(String model) {
         this.model = model;
     }
 
-    public int getYear() {
-        return year;
+    public Engine getEngine() {
+        return engine;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 
-    public double getPrice() {
-        return price;
+    public Transmission getTransmission() {
+        return transmission;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setTransmission(Transmission transmission) {
+        this.transmission = transmission;
     }
 
-    void makeCar(String name, int price) {
-        Car car = new Car();
+    public Wheel[] getWheels() {
+        return wheels;
+    }
 
+    public void setWheels(Wheel[] wheels) {
+        this.wheels = wheels;
+    }
+
+    public void setWheel(Wheel wheel, int index) {
+        this.wheels[index] = wheel;
 
     }
 }

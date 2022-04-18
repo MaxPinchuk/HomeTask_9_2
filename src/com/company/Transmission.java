@@ -2,7 +2,7 @@ package com.company;
 
 public class Transmission {
 
-       private String typeOfTransmission;
+    private String typeOfTransmission;
     private String carDrive; // привод автомобиля: заднеприводный, переднеприводный или полноприводный.
 
     public String getTypeOfTransmission() {

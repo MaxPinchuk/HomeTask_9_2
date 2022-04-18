@@ -2,9 +2,16 @@ package com.company;
 
 public class Engine {
 
+    private String engineName;
     private double enginePower;
-    private double engineCapacity;
-    private double fuelConsumption;
+
+    public String getEngineName() {
+        return engineName;
+    }
+
+    public void setEngineName(String engineName) {
+        this.engineName = engineName;
+    }
 
     public double getEnginePower() {
         return enginePower;
@@ -12,21 +19,5 @@ public class Engine {
 
     public void setEnginePower(double enginePower) {
         this.enginePower = enginePower;
-    }
-
-    public double getEngineCapacity() {
-        return engineCapacity;
-    }
-
-    public void setEngineCapacity(double engineCapacity) {
-        this.engineCapacity = engineCapacity;
-    }
-
-    public double getFuelConsumption() {
-        return fuelConsumption;
-    }
-
-    public void setFuelConsumption(double fuelConsumption) {
-        this.fuelConsumption = fuelConsumption;
     }
 }
